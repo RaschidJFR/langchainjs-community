@@ -1,5 +1,17 @@
 # @langchain/community
 
+## 1.1.28
+
+### Patch Changes
+
+- [#30](https://github.com/langchain-ai/langchainjs-community/pull/30) [`9cd006c`](https://github.com/langchain-ai/langchainjs-community/commit/9cd006c629be032a0ad11dca3b21c9a6a0db9f51) Thanks [@christian-bromann](https://github.com/christian-bromann)! - fix(pdf-loader): support both pdf-parse v1 and v2
+
+- [#36](https://github.com/langchain-ai/langchainjs-community/pull/36) [`1e2e4bf`](https://github.com/langchain-ai/langchainjs-community/commit/1e2e4bf947ba0e1870df36f1610b0460edb77bf5) Thanks [@hntrl](https://github.com/hntrl)! - Fix Milvus collection loading before delete operations ([#9749](https://github.com/langchain-ai/langchainjs-community/issues/9749)) and partition name handling in search/delete ([#9748](https://github.com/langchain-ai/langchainjs-community/issues/9748))
+  - Added `loadCollectionSync()` call in the `delete()` method to ensure collection is loaded before delete operations
+  - Added `partition_names` parameter to `search()` call in `similaritySearchVectorWithScore()`
+  - Added `partition_name` parameter to both `deleteEntities()` and `delete()` calls
+  - Updated error message in delete method from "before search" to "before deletion"
+
 ## 1.1.27
 
 ### Patch Changes
